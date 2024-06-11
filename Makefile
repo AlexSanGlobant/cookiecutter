@@ -21,4 +21,4 @@ lint-ci:
 	bash run.sh lint:ci
 
 test:
-	bash run.sh run-test
+	bash run.sh run-tests
