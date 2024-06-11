@@ -1,7 +1,7 @@
+"Test make file functions"
+
 import subprocess
 from pathlib import Path
-
-import pytest
 
 
 def test__linting_passes(project_dir: Path):
