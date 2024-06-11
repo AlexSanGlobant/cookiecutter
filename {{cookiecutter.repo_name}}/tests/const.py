@@ -1,4 +1,4 @@
-"Create constant values for pytest"
+"""Create constant values for pytest."""
 
 from pathlib import Path
 

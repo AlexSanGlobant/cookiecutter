@@ -1,4 +1,4 @@
-"Code for create fixtures"
+"""Code for create fixtures."""
 
 from uuid import uuid4
 

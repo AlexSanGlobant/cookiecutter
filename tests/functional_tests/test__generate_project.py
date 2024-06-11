@@ -1,4 +1,4 @@
-"Test project creation"
+"""Test project creation."""
 
 from pathlib import Path
 

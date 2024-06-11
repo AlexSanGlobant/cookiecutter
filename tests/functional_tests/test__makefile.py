@@ -1,4 +1,4 @@
-"Test make file functions"
+"""Test make file functions."""
 
 import subprocess
 from pathlib import Path

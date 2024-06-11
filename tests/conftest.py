@@ -1,4 +1,4 @@
-"Start configuration python test"
+"""Start configuration python test."""
 
 import sys
 from pathlib import Path

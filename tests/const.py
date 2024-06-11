@@ -1,4 +1,4 @@
-"Constant variables for python test"
+"""Constant variables for python test."""
 
 from pathlib import Path
 
