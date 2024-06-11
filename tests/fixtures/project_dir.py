@@ -3,6 +3,7 @@
 import shutil
 import subprocess
 from pathlib import Path
+from typing import Any, Generator
 from uuid import uuid4
 
 import pytest
@@ -11,7 +12,7 @@ from tests.utils.project import generate_project, initialize_git_repo
 
 
 @pytest.fixture(scope="session")
-def project_dir() -> Path:
+def project_dir() -> Generator[Any, Any, Any]:
     """Fixture to create project and return dir."""
     test_session_id: str = generate_test_session_id()
     template_values = {"repo_name": f"test-repo-{test_session_id}"}
