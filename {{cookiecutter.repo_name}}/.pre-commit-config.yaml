@@ -59,6 +59,7 @@ repos:
         args:
           [
             --no-strict-optional,
+            --explicit-package-bases,
             --ignore-missing-imports,
             --config-file=./pyproject.toml,
           ]
