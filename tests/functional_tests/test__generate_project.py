@@ -4,7 +4,5 @@ from pathlib import Path
 
 
 def test__can_generate_project(project_dir: Path):
-    """
-    execute test cookiecutter
-    """
+    """Execute test cookiecutter."""
     assert project_dir.exists()

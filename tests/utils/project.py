@@ -10,6 +10,7 @@ from tests.const import PROJECT_DIR
 
 
 def initialize_git_repo(repo_dir: Path):
+    """Create git folder."""
     subprocess.run(["git", "init"], cwd=repo_dir, check=True)
     subprocess.run(["git", "branch", "-M", "main"], cwd=repo_dir, check=True)
     subprocess.run(["git", "add", "--all"], cwd=repo_dir, check=True)
@@ -17,6 +18,7 @@ def initialize_git_repo(repo_dir: Path):
 
 
 def generate_project(template_values: Dict[str, str], test_session_id: str):
+    """Generate project."""
     template_values_: Dict[str, str] = deepcopy(template_values)
     cookiecutter_config = {"default_context": template_values_}
     cookiecutter_config_fpath = PROJECT_DIR / f"tests/cookiecutter-{test_session_id}.json"

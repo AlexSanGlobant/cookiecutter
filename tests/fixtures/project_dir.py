@@ -12,6 +12,7 @@ from tests.utils.project import generate_project, initialize_git_repo
 
 @pytest.fixture(scope="session")
 def project_dir() -> Path:
+    """Fixture to create project and return dir."""
     test_session_id: str = generate_test_session_id()
     template_values = {"repo_name": f"test-repo-{test_session_id}"}
     generated_repo_dir: Path = generate_project(template_values=template_values, test_session_id=test_session_id)
@@ -24,5 +25,6 @@ def project_dir() -> Path:
 
 
 def generate_test_session_id() -> str:
+    """Generate session id."""
     test_session_id = str(uuid4())[:6]
     return test_session_id
